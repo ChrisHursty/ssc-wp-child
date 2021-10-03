@@ -1,5 +1,5 @@
 # ssc-wp-child
-Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap
+Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap for Striper Surf CLub
 
 ## How it works
 Understrap Child Theme shares with the parent theme all PHP files and adds its own functions.php on top of the Understrap parent theme's functions.php.
