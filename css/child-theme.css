@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14964,6 +14965,53 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .wpcf7 .wpcf7-validation-errors {
   color: #dc3545;
   border: 1px solid #e9ecef;
+}
+
+.header-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header-section .title {
+  align-items: center;
+  display: flex;
+}
+.header-section .title h1,
+.header-section .title h2 {
+  color: #0b003c;
+  font-family: "Bitter", serif;
+}
+.header-section .title h1 {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.header-section .title h2 {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+.header-section .members-login {
+  align-items: center;
+  display: flex;
+}
+.header-section .members-login .member-link {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.header-section .members-login .member-link .ssc-member-login {
+  margin-right: 4px;
+  max-width: 46px;
+}
+.header-section .members-login .member-link h5 {
+  font-family: "Bitter", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav#main-nav {
+  background-color: #bada55;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

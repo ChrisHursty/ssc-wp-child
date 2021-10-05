@@ -1,0 +1,54 @@
+.header-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .title {
+        align-items: center;
+        display: flex;
+
+        h1,
+        h2 {
+            color: $primary_color;
+            font-family: 'Bitter', serif;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            font-weight: 300;
+        }
+    }
+
+    .members-login {
+        align-items: center;
+        display: flex;
+
+        .member-link {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            
+            .ssc-member-login {
+                margin-right: 4px;
+                max-width: 46px;
+            }
+
+            h5 {
+                font-family: 'Bitter', serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+nav#main-nav {
+    background-color: #bada55;
+}
