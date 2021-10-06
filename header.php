@@ -24,19 +24,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-		<div class="container header-section">
+		<div class="container-md header-section">
 			<div class="row">
 			<!-- Your site title as branding in the menu -->
-				<div class="col-2 logo">
+				<div class="col-sm-2 logo">
 					<?php the_custom_logo(); ?>
 				</div>
-				<div class="col-6 title">
+				<div class="col-sm-6 title">
 					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" itemprop="url">
 						<h1 class="navbar-brand mb-0"><?php bloginfo( 'name' ); ?></h1>
 						<h2><?php bloginfo( 'description' ); ?></h2>
 					</a>
 				</div>
-				<div class="col-4 members-login">
+				<div class="col-sm-4 members-login">
 					<a href="#" class="member-link">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/member-login-icon.png" alt="Member Login Icon" class="ssc-member-login">
 						<h5>SSC Member Login</h5>
@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 			</h2>
-			<div class="container-fluid">
+			<div class="container-md">
 				<div class="row">
 				
 					<div class="col">
