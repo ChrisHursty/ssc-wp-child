@@ -14976,6 +14976,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   align-items: center;
   display: flex;
 }
+.header-section .title a:hover {
+  text-decoration: none;
+}
 .header-section .title h1,
 .header-section .title h2 {
   color: #0b003c;
