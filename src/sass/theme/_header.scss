@@ -1,5 +1,6 @@
 .header-section {
     align-items: center;
+    border-bottom: 1px solid $primary_color;
     display: flex;
     justify-content: center;
 
@@ -24,7 +25,7 @@
         h1,
         h2 {
             color: $primary_color;
-            font-family: 'Bitter', serif;
+            font-family: $heading_font;
         }
 
         h1 {
@@ -89,9 +90,61 @@
 }
 
 nav#main-nav {
-    background-color: #bada55;
 
-    @include media-breakpoint-up(md) {
-        background-color: dodgerblue;
+    a {
+        font-family: $heading_font;
+    }
+
+    @media (max-width: 767.98px) {
+        background-color: $primary_color;
+        color: $white;
+
+        .row {
+            justify-content: flex-end;
+            display: block;
+            text-align: right;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+
+            #navbarNavDropdown {
+
+                li {
+                    padding: 0 10px;
+
+                    &:hover {
+                        background-color: $white;
+                        
+                        a:hover {
+                            color: $primary_color;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                a {
+                    color: $white;
+                    font-family: $heading_font;
+                }
+            }
+        }
+    
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: $primary_color;
+            border: 1px solid $white;
+            border-radius: 0;
+        }
+    }
+}
+
+.navbar {
+    @media (max-width: 767.98px) {
+        padding: 0;
+
+        .hamburger {
+            padding: 10px;
+        }
     }
 }

@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h2><?php bloginfo( 'description' ); ?></h2>
 					</a>
 				</div>
-				<div class="col-sm-4 members-login">
+				<div class="col-sm-6 col-md-4 members-login">
 					<a href="#" class="member-link">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/member-login-icon.png" alt="Member Login Icon" class="ssc-member-login">
 						<h5>SSC Member Login</h5>
@@ -52,8 +52,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</h2>
 			<div class="container-md">
 				<div class="row">
-				
-					<div class="col">
+					<div class="hamburger">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+						<span class="navbar-toggler-icon">   
+							<i class="fa fa-bars" style="color:#fff; font-size:28px;"></i>
+						</span>
+						</button>
+					</div>
+					
 					<!-- The WordPress Menu goes here -->
 					<?php
 					wp_nav_menu(
@@ -69,12 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						)
 					);
 					?>
-					</div>
-					<div class="col">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-						<span class="navbar-toggler-icon"></span>
-						</button>
-					</div>
+						
 				</div>
 			</div>
 

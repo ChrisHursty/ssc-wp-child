@@ -15019,6 +15019,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 
 .header-section {
   align-items: center;
+  border-bottom: 1px solid #0b003c;
   display: flex;
   justify-content: center;
 }
@@ -15106,12 +15107,52 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   }
 }
 
-nav#main-nav {
-  background-color: #bada55;
+nav#main-nav a {
+  font-family: "Bitter", serif;
 }
-@media (min-width: 768px) {
+@media (max-width: 767.98px) {
   nav#main-nav {
-    background-color: dodgerblue;
+    background-color: #0b003c;
+    color: #fff;
+  }
+  nav#main-nav .row {
+    justify-content: flex-end;
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  nav#main-nav .row #navbarNavDropdown li {
+    padding: 0 10px;
+  }
+  nav#main-nav .row #navbarNavDropdown li:hover {
+    background-color: #fff;
+  }
+  nav#main-nav .row #navbarNavDropdown li:hover a:hover {
+    color: #0b003c;
+    text-decoration: underline;
+  }
+  nav#main-nav .row #navbarNavDropdown a {
+    color: #fff;
+    font-family: "Bitter", serif;
+  }
+  nav#main-nav .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #0b003c;
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .hamburger {
+    padding: 10px;
   }
 }
 
