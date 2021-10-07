@@ -3,6 +3,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+add_action( 'after_setup_theme', 'ssc_child_setup' );
+
+if ( ! function_exists( 'ssc_child_setup' ) ) {
+
+	function ssc_child_setup() {
+
+		// Home Page Menu
+		register_nav_menus(
+			array(
+				'home_page_menu' => __( 'Home Page Menu', 'ssc_child' ),
+			)
+		);
+
+	}
+}
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
