@@ -10,9 +10,11 @@ defined( 'ABSPATH' ) || exit;
 
 get_header(); ?>
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <h1>Home Page Bruce</h1>
+        <div class="hero-image-container" style="background-image: url('<?php if (get_theme_mod( 'home_hero_img' )) : echo get_theme_mod( 'home_hero_img'); else: echo get_stylesheet_directory_uri() . '/img/home-page-hero.jpg'; endif; ?>');">
+            
+        </div>
     </div>
 </div>
 

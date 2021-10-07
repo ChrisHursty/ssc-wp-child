@@ -31,3 +31,27 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'ssc-wp-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+// UnderStrap's includes directory.
+$understrap_inc_dir = 'inc';
+
+// Array of files to include.
+$understrap_includes = array(
+    '/hooks.php',     // Custom hooks.
+	'/customizer.php' // Customizer additions.
+);
+
+// Load WooCommerce functions if WooCommerce is activated.
+if ( class_exists( 'WooCommerce' ) ) {
+	$understrap_includes[] = '/woocommerce.php';
+}
+
+// Load Jetpack compatibility file if Jetpack is activiated.
+if ( class_exists( 'Jetpack' ) ) {
+	$understrap_includes[] = '/jetpack.php';
+}
+
+// Include files.
+foreach ( $understrap_includes as $file ) {
+	require_once get_theme_file_path( $understrap_inc_dir . $file );
+}
