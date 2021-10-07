@@ -15164,4 +15164,42 @@ nav#main-nav a {
   width: 100vw;
 }
 
+.home-menu-container {
+  margin-top: 45px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#home-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+#home-menu li {
+  font-size: 1rem;
+  flex: 1 0 26%;
+  height: 50px;
+  background-color: #0b003c;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+#home-menu li a {
+  color: #fff;
+  font-family: "Bitter", serif;
+}
+
+@media (max-width: 767.98px) {
+  #home-menu > li {
+    flex-basis: 34%;
+  }
+}
+@media (max-width: 320px) {
+  #home-menu > li {
+    flex-basis: 51%;
+  }
+}
+
 /*# sourceMappingURL=child-theme.css.map */

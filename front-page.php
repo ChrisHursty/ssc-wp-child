@@ -16,14 +16,14 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container-md">
     <div class="row">
         <!-- The WordPress Menu goes here -->
         <?php
         wp_nav_menu(
             array(
                 'theme_location'  => 'home_page_menu',
-                'container_class' => 'home-menu-container',
+                'container_class' => 'home-menu-container col-sm-12 col-md-8 offset-md-2',
                 'menu_class'      => 'home-page-menu',
                 'menu_id'         => 'home-menu',
             )
