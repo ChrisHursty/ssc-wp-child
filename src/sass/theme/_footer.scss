@@ -1,0 +1,26 @@
+#wrapper-footer {
+    background-color: $primary_color;
+    color: $white;
+    font-family: $heading_font;
+
+    .footer-menu {
+        padding-left: 0;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+    }
+
+    a {
+        color: $white;
+    }
+
+    .site-footer {
+        color: #bbb;
+        font-size: 0.75rem;
+        text-align: center;
+
+    }
+}

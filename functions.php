@@ -16,6 +16,13 @@ if ( ! function_exists( 'ssc_child_setup' ) ) {
 			)
 		);
 
+		// Footer Menu
+		register_nav_menus(
+			array(
+				'footer_menu' => __( 'Footer Menu', 'ssc_child' ),
+			)
+		);
+
 	}
 }
 

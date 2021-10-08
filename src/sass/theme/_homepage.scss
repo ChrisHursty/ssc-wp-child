@@ -2,8 +2,12 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 75vh;
+    height: 30vh;
     width: 100vw;
+
+    @include media-breakpoint-up(md) {
+        height: 75vh;
+    }
 }
 
 // Home Page Menu
@@ -27,7 +31,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        align-content: space-around;
 
         a {
             color: $white;
@@ -36,14 +39,37 @@
     }
 }
 
+.image-links {
+    margin: 15px auto;
+
+    @include media-breakpoint-up(md) {
+        margin: 45px auto;
+    }
+
+    .left-image,
+    .right-image {
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
 @media (max-width: 767.98px) {
     #home-menu > li {
         flex-basis: 34%;
+        margin: 4px;
     }
 }
   
 @media (max-width: 320px) {
     #home-menu > li {
         flex-basis: 51%;
+        margin: 0;
     }
 }
+
+@media (min-width: 1025px) {
+    #home-menu > li {
+        margin: 10px;
+    }
+}
+// END Home Page Menu
