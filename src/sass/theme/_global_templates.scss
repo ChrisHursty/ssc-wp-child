@@ -1,5 +1,39 @@
+// Hero Image & Title
 .hero-image-default {
     background-position: center center;
     background-size: cover;
-    height: 400px;
+    height: 20vh;
+
+    @include media-breakpoint-up(md) {
+        height: 400px;
+    }
+    
+
+    .title-bg {
+        background-color: rgba( 11, 0, 60, 0.75);
+        color: $white;
+        padding: 25px 40px 20px;
+        text-align: center;
+
+        h1 {
+            line-height: 1;
+        }
+    }
+}
+
+.page-title {
+    text-transform: uppercase !important;
+}
+
+// Content Area
+#page-wrapper,
+#single-wrapper {
+    .container {
+        .row {
+            @include media-breakpoint-down(sm) {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }   
+    }
 }

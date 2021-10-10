@@ -7,3 +7,9 @@ $white: #fff;
 
 // Fonts
 $heading_font: 'Bitter', serif;
+$font_bold: 700 !important;
+
+h1, h2, h3 {
+    font-family: $heading-font;
+    font-weight: $font_bold;
+}
