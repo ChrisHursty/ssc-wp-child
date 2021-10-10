@@ -15250,4 +15250,10 @@ nav#main-nav a {
   text-align: center;
 }
 
+.hero-image-default {
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
 /*# sourceMappingURL=child-theme.css.map */
