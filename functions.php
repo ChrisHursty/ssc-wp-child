@@ -78,3 +78,67 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+// Records Post Type
+if ( ! function_exists('records') ) {
+
+	// Register Custom Post Type
+	function records() {
+	
+		$labels = array(
+			'name'                  => _x( 'Records', 'Post Type General Name', 'ssc-child' ),
+			'singular_name'         => _x( 'Record', 'Post Type Singular Name', 'ssc-child' ),
+			'menu_name'             => __( 'Records', 'ssc-child' ),
+			'name_admin_bar'        => __( 'Record', 'ssc-child' ),
+			'archives'              => __( 'Records Archives', 'ssc-child' ),
+			'attributes'            => __( 'Record Attributes', 'ssc-child' ),
+			'parent_item_colon'     => __( 'Records:', 'ssc-child' ),
+			'all_items'             => __( 'All Records', 'ssc-child' ),
+			'add_new_item'          => __( 'Add New Record', 'ssc-child' ),
+			'add_new'               => __( 'Add New', 'ssc-child' ),
+			'new_item'              => __( 'New Record', 'ssc-child' ),
+			'edit_item'             => __( 'Edit Record', 'ssc-child' ),
+			'update_item'           => __( 'Update Record', 'ssc-child' ),
+			'view_item'             => __( 'View Record', 'ssc-child' ),
+			'view_items'            => __( 'View Records', 'ssc-child' ),
+			'search_items'          => __( 'Search Records', 'ssc-child' ),
+			'not_found'             => __( 'Not found', 'ssc-child' ),
+			'not_found_in_trash'    => __( 'Not found in Trash', 'ssc-child' ),
+			'featured_image'        => __( 'Featured Image', 'ssc-child' ),
+			'set_featured_image'    => __( 'Set featured image', 'ssc-child' ),
+			'remove_featured_image' => __( 'Remove featured image', 'ssc-child' ),
+			'use_featured_image'    => __( 'Use as featured image', 'ssc-child' ),
+			'insert_into_item'      => __( 'Insert into item', 'ssc-child' ),
+			'uploaded_to_this_item' => __( 'Uploaded to this item', 'ssc-child' ),
+			'items_list'            => __( 'Items list', 'ssc-child' ),
+			'items_list_navigation' => __( 'Items list navigation', 'ssc-child' ),
+			'filter_items_list'     => __( 'Filter items list', 'ssc-child' ),
+		);
+		$args = array(
+			'label'                 => __( 'Record', 'ssc-child' ),
+			'description'           => __( 'Records of Fishing Records', 'ssc-child' ),
+			'labels'                => $labels,
+			'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 'post-formats' ),
+			'taxonomies'            => array( 'category', 'post_tag' ),
+			'hierarchical'          => false,
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'menu_position'         => 5,
+			'menu_icon'             => 'dashicons-awards',
+			'show_in_admin_bar'     => true,
+			'show_in_nav_menus'     => true,
+			'can_export'            => true,
+			'has_archive'           => true,
+			'exclude_from_search'   => false,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'page',
+			'show_in_rest'          => true,
+		);
+		register_post_type( 'records', $args );
+	
+	}
+	add_action( 'init', 'records', 0 );
+	
+}
+	
