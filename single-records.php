@@ -39,9 +39,11 @@ $size = 'full';
 						<p><?php echo the_field( 'record_details' ); ?></p>
 					</div>
 					<div class="col-md-6 records-image">
-						<img src="<?php if( $image ) { 
-							echo wp_get_attachment_image( $image, $size );
-						}?>
+					<?php 
+						$image = get_field('record_photo');
+						if( !empty( $image ) ): ?>
+							<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+						<?php endif; ?>
 					</div>
 				</div>
 			</main><!-- #main -->
