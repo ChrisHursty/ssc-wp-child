@@ -1,0 +1,72 @@
+.post-type-archive-records {
+
+    .record-container {
+        background-color: #f9f9f9;
+        border: 1px solid #d3d3d5;
+        border-radius: 6px;
+        flex: 0 0 32%;
+        height: 650px;
+        margin: 15px 0.5%;
+        max-width: 32%;
+        overflow: hidden;
+        padding-left: 0;
+        padding-right: 0;
+
+        @include media-breakpoint-down(md) {
+            height: 400px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 100%;
+            height: auto;
+            margin: 15 0;
+            max-width: 100%;
+        }
+        
+        .record-image {
+            height: 370px;
+            overflow: hidden;
+            position: relative;
+
+            @include media-breakpoint-down(md) {
+                height: 200px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: auto;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .records-icon {
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    
+        .record-content {
+            height: 200px;
+            padding: 15px;
+
+            @include media-breakpoint-down(sm) {
+                height: auto;
+            }
+
+            h4 {
+                color: $primary;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: $primary;
+                font-size: 1.1rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -28,17 +28,24 @@ get_header(); ?>
 			<?php if($the_query->have_posts()) : ?>
 			<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
-			<div class="col-4">
+			<div class="col-sm-12 col-md-4 record-container">
 				<div class="record-image">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/trophy-icon.png" alt="Member Login Icon" class="records-icon">
 				<?php 
 					$image = get_field('record_photo');
-					if( !empty( $image ) ): ?>
+					
+
+					if( !empty( $image ) ) { ?>
 						<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-					<?php endif; ?>
+					<?php } else { ?>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/records-default-image.jpg" alt="Records Image">
+					<?php } ?>
+
+
 				</div>
 
 				<div class="record-content">
-					<h4><?php echo the_field( 'record_name' ); ?></h4>
+					<h3><?php echo the_field( 'record_name' ); ?></h3>
 					<h4><?php echo the_field( 'record_set' ); ?></h4>
 					<p><?php echo the_field( 'record_details' ); ?></p>
 
