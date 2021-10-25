@@ -13,3 +13,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
     font-weight: $font_bold;
 }
+
+.bottom-border {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    
+}

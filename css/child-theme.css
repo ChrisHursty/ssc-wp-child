@@ -5,6 +5,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700 !important;
 }
 
+.bottom-border {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
