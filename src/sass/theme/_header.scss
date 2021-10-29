@@ -92,9 +92,25 @@
 }
 
 nav#main-nav {
+    padding: 0 1rem 0.5rem;
 
     a {
         font-family: $heading_font;
+    }
+
+    ul {
+        li {
+            padding: 0.5rem 1rem;
+        }
+
+        li:hover,
+        .current-menu-item {
+            background-color: $primary_color;
+
+            a {
+                color: $white;
+            }
+        }
     }
 
     @media (max-width: 767.98px) {

@@ -50,6 +50,10 @@
     .right-image {
         margin: 10px auto;
         text-align: center;
+
+        a {
+            display: flex;
+        }
     }
 }
 

@@ -24,14 +24,14 @@ if ( has_post_thumbnail() ) {
     </div>
 </div>
 <div class="wrapper" id="page-wrapper">
-	<div class="container" id="content" tabindex="-1">
+	<div class="container-md" id="content" tabindex="-1">
 		<div class="row">
 			<main class="site-main" id="main">
             <?php
 
                 // Check value exists.
                 if( have_rows('flexible_content') ): ?>
-                <div class="container">
+                <div class="container-md">
                     
                     <?php // Loop through rows.
                     while ( have_rows('flexible_content') ) : the_row(); ?>

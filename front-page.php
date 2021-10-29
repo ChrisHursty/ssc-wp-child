@@ -35,14 +35,14 @@ get_header(); ?>
 <div class="container image-links">
     <div class="row">
         <?php if( get_theme_mod( 'home_text_link_left' ) && get_theme_mod( 'home_img_link_left' ) ): ?>
-        <div class="col-sm-12 col-md-6 left-image">    
+        <div class="col-sm-12 col-md-6 left-image justify-content-center align-self-center">    
             <a href="<?php echo get_theme_mod( 'home_text_link_left' ); ?>" rel="noopener noreferrer" target="_blank">
                 <img src="<?php echo get_theme_mod( 'home_img_link_left' ); ?>" alt="home page image link to third party">
             </a>
         </div>
         <?php endif; ?>
         <?php if( get_theme_mod( 'home_text_link_right' ) && get_theme_mod( 'home_img_link_right' ) ): ?>
-        <div class="col-sm-12 col-md-6 right-image">
+        <div class="col-sm-12 col-md-6 right-image justify-content-center align-self-center">
             <a href="<?php echo get_theme_mod( 'home_text_link_right' ); ?>" rel="noopener noreferrer" target="_blank">
                 <img src="<?php echo get_theme_mod( 'home_img_link_right' ); ?>" alt="home page image link to third party">
             </a>
