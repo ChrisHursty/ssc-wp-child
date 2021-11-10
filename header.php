@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-4 members-login">
-					<a href="#" class="member-link">
+					<a href="/members" class="member-link">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/member-login-icon.png" alt="Member Login Icon" class="ssc-member-login">
 						<h5>SSC Member Login</h5>
 					</a>
