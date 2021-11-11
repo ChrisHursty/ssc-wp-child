@@ -15043,6 +15043,10 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   .header-section .logo {
     display: block;
   }
+  .header-section .logo a {
+    overflow: hidden;
+    width: 80%;
+  }
 }
 .header-section .title {
   align-items: center;
@@ -15111,6 +15115,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
     width: 60%;
     float: left;
   }
+}
+.header-section .members-login {
+  justify-content: flex-end;
 }
 @media (max-width: 575.98px) {
   .header-section .members-login {

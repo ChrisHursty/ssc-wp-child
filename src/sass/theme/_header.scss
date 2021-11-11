@@ -11,6 +11,11 @@
 
         @include media-breakpoint-up(md) {
             display: block;
+
+            a {
+                overflow: hidden;
+                width: 80%;
+            }
         }
     }
 
@@ -83,6 +88,9 @@
     }
 
     .members-login {
+        justify-content: flex-end;
+
+        
         @media (max-width: 575.98px) {
             display: block;
             width: 40%;
