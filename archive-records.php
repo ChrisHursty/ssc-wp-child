@@ -12,6 +12,13 @@ defined( 'ABSPATH' ) || exit;
 get_header(); ?>
 
 <div class="wrapper" id="archive-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2">
+				<?php the_field('records_text_area', 'options'); ?>
+			</div>
+		</div>
+	</div>
 	<div class="container" id="content" tabindex="-1">
 		<div class="row">
 		<?php 

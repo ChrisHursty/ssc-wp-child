@@ -24,6 +24,13 @@ if ( has_post_thumbnail() ) {
     </div>
 </div>
 <div class="wrapper" id="page-wrapper">
+    <div class="container">
+		<div class="row">
+			<div class="col-sm-12 offset-sm-0 col-md-8 offset-md-2">
+				<?php the_field('four_column_text_area'); ?>
+			</div>
+		</div>
+	</div>
 	<div class="container" id="content" tabindex="-1">
 		<div class="row">
             <table class="table table-striped">
