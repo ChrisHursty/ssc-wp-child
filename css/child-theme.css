@@ -15190,6 +15190,41 @@ nav#main-nav ul .current-menu-item a {
   }
 }
 
+.menu-item-has-children.show .dropdown-menu.show ul {
+  background-color: #85ddff;
+}
+.menu-item-has-children.show .dropdown-menu.show ul li a {
+  color: orange;
+}
+.menu-item-has-children.show .dropdown-menu.show ul li a:hover {
+  color: lime;
+}
+.menu-item-has-children.show .dropdown-menu.show ul li.current-menu-item {
+  background-color: yellow;
+  color: purple;
+}
+
+.dropdown-menu li,
+.menu-item-has-children.show li,
+.menu-item-has-children.show:hover li {
+  background-color: #fff !important;
+}
+.dropdown-menu li a,
+.menu-item-has-children.show li a,
+.menu-item-has-children.show:hover li a {
+  color: #0b003c !important;
+}
+.dropdown-menu li a:hover,
+.menu-item-has-children.show li a:hover,
+.menu-item-has-children.show:hover li a:hover {
+  background-color: #fff !important;
+  text-decoration: underline;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
 .hero-image-container {
   background-repeat: no-repeat;
   background-position: center center;

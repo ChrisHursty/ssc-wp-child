@@ -60,11 +60,7 @@ if ( has_post_thumbnail() ) {
                         
                 </tbody>
             </table>
-            <?php 
-            // No value.
-            else :
-                // Do something...
-            endif; ?>
+            <?php else : endif; ?>
 
             <div class="col">
                 <?php the_content(); ?>
