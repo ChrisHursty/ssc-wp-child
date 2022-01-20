@@ -1,5 +1,10 @@
 @charset "UTF-8";
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bitter", serif;
   font-weight: 700 !important;
 }
@@ -8,6 +13,13 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #ccc;
   margin-bottom: 25px;
   padding-bottom: 25px;
+}
+
+.btn-primary a {
+  color: #fff;
+}
+.btn-primary a:hover {
+  color: #d9d9d9;
 }
 
 *,

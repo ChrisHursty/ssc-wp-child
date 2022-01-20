@@ -46,7 +46,7 @@ if ( has_post_thumbnail() ) {
                                 <?php // Case: Download layout.
                                 elseif( get_row_layout() == 'image_text' ):
                                     $image = get_sub_field( 'image' );
-                                    $text = get_sub_field('text'); ?>
+                                    $text  = get_sub_field('text'); ?>
                                     <div class="col-sm-6 col-md-3">
                                         <img src="<?php echo $image;?>" alt="History &amp; Officers">
                                     </div>

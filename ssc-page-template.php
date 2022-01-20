@@ -31,7 +31,7 @@ if ( has_post_thumbnail() ) {
 	<div class="container" id="content" tabindex="-1">
 		<div class="row">
 
-			<main class="site-main" id="main">
+			<main class="site-main full-width-content" id="main">
 
 				<?php the_content(); ?>
 

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Bitter", serif;
   font-weight: 700 !important;
 }
@@ -9,6 +14,13 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #ccc;
   margin-bottom: 25px;
   padding-bottom: 25px;
+}
+
+.btn-primary a {
+  color: #fff;
+}
+.btn-primary a:hover {
+  color: #d9d9d9;
 }
 
 /*!
@@ -15351,6 +15363,10 @@ nav#main-nav ul .current-menu-item a {
     margin-left: 15px;
     margin-right: 15px;
   }
+}
+
+#page-wrapper .container .row .full-width-content {
+  flex: 0 0 100%;
 }
 
 .post-type-archive-records .record-container {
