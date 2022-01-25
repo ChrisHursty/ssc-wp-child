@@ -15289,6 +15289,12 @@ nav#main-nav ul .current-menu-item a {
   margin: 10px auto;
   text-align: center;
 }
+@media (max-width: 991.98px) {
+  .image-links .left-image,
+.image-links .right-image {
+    margin: 10px 16%;
+  }
+}
 .image-links .left-image a,
 .image-links .right-image a {
   display: flex;
@@ -15344,7 +15350,7 @@ nav#main-nav ul .current-menu-item a {
   }
 }
 .hero-image-default .title-bg {
-  background-color: rgba(11, 0, 60, 0.75);
+  background-color: rgba(0, 102, 60, 0.75);
   color: #fff;
   padding: 25px 40px 20px;
   text-align: center;
