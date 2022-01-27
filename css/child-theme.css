@@ -15350,7 +15350,7 @@ nav#main-nav ul .current-menu-item a {
   }
 }
 .hero-image-default .title-bg {
-  background-color: rgba(0, 102, 60, 0.75);
+  background-color: #005ac8e0;
   color: #fff;
   padding: 25px 40px 20px;
   text-align: center;
@@ -15373,6 +15373,11 @@ nav#main-nav ul .current-menu-item a {
 
 #page-wrapper .container .row .full-width-content {
   flex: 0 0 100%;
+}
+
+.table-striped thead {
+  background-color: #005ac8;
+  color: #fff;
 }
 
 .post-type-archive-records .record-container {
