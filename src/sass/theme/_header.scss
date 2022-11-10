@@ -73,7 +73,16 @@
         text-transform: uppercase;
 
         @include media-breakpoint-up(md) {
+<<<<<<< HEAD
           @include font-size(1rem);
+=======
+            display: block;
+
+            a {
+                overflow: hidden;
+                width: 80%;
+            }
+>>>>>>> 7f7f78f (Updates for SSC)
         }
       }
     }
@@ -90,16 +99,63 @@
   .members-login {
     justify-content: flex-end;
 
+<<<<<<< HEAD
     @media (max-width: 575.98px) {
       display: block;
       width: 40%;
       float: left;
+=======
+        .member-link {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            
+            .ssc-member-login {
+                margin-right: 4px;
+                max-width: 46px;
+            }
+
+            h5 {
+                font-size: 0.75rem;
+                font-family: 'Bitter', serif;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                @include media-breakpoint-up(md) {
+                    @include font-size(1rem);
+                }
+            }
+        }
+    }
+
+    .title {
+        @media (max-width: 575.98px) {
+            display: block;
+            width: 60%;
+            float: left;
+        }
+    }
+
+    .members-login {
+        justify-content: flex-end;
+
+        
+        @media (max-width: 575.98px) {
+            display: block;
+            width: 40%;
+            float: left;
+        }
+>>>>>>> 7f7f78f (Updates for SSC)
     }
   }
 }
 
 nav#main-nav {
+<<<<<<< HEAD
   padding: 0 1rem 0.5rem;
+=======
+    padding: 0 1rem 0.5rem;
+>>>>>>> 7f7f78f (Updates for SSC)
 
   a {
     font-family: $heading_font;
@@ -110,11 +166,31 @@ nav#main-nav {
       padding: 0.5rem 1rem;
     }
 
+<<<<<<< HEAD
     li:hover,
     .current-menu-item {
       background-color: $primary_color;
 
       a {
+=======
+    ul {
+        li {
+            padding: 0.5rem 1rem;
+        }
+
+        li:hover,
+        .current-menu-item {
+            background-color: $primary_color;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        background-color: $primary_color;
+>>>>>>> 7f7f78f (Updates for SSC)
         color: $white;
       }
     }
